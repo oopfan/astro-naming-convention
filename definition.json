@@ -1,0 +1,85 @@
+[
+  {
+    "id": "frame",
+    "prompt": "Frame (e.g. Light, Flat, Dark, Bias)",
+    "format": "${0}",
+    "default": "",
+    "order": 2
+  },
+  {
+    "id": "target",
+    "prompt": "Target (e.g. M31, NGC 7380)",
+    "format": "${0}",
+    "default": "",
+    "order": 1,
+    "constraints": [
+      {
+        "id": "frame",
+        "answers": [
+          "Light",
+          "Flat"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "filter",
+    "prompt": "Filter (e.g. L, R, G, B, S, Ha, O)",
+    "format": "${0}",
+    "default": "",
+    "order": 3,
+    "constraints": [
+      {
+        "id": "frame",
+        "answers": [
+          "Light",
+          "Flat"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "exposure",
+    "prompt": "Exposure (s)",
+    "format": "${0}s",
+    "default": "",
+    "order": 4,
+    "constraints": [
+      {
+        "id": "frame",
+        "answers": [
+          "Light",
+          "Dark"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gain",
+    "prompt": "Gain",
+    "format": "G${0}",
+    "default": "",
+    "order": 5
+  },
+  {
+    "id": "offset",
+    "prompt": "Offset",
+    "format": "BL${0}",
+    "default": "",
+    "order": 6
+  },
+  {
+    "id": "date",
+    "prompt": "Date (yyyymmdd)",
+    "format": "${0}",
+    "default": "",
+    "order": 7
+  },
+  {
+    "id": "series",
+    "prompt": "Series",
+    "format": "${0}",
+    "default": "",
+    "order": 8
+  }
+]
